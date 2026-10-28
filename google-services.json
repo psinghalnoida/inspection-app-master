@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "65831842996",
+    "project_id": "claimsmitra-3153f",
+    "storage_bucket": "claimsmitra-3153f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:65831842996:android:58da4a8344848cb91053e1",
+        "android_client_info": {
+          "package_name": "com.xenotix.claimsmitra"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCENd7uRqyDVtsFxUAJWwowi7TRm2AFTEA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

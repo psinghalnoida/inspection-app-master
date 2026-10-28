@@ -1,0 +1,93 @@
+{
+  "expo": {
+    "name": "ClaimsMitra",
+    "slug": "ClaimsMitra",
+    "version": "2.1.03",
+    "orientation": "portrait",
+    "icon": "./assets/images/appicon.png",
+    "scheme": "claimsmitra",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.xenotix.claimsmitra",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      },
+      "googleServicesFile": "./GoogleService-Info.plist"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/images/appicon.png",
+        "backgroundImage": "./assets/images/appicon.png",
+        "monochromeImage": "./assets/images/appicon.png"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "package": "com.xenotix.claimsmitra",
+      "googleServicesFile": "./google-services.json",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyAbaQ3ldMRUYmxt39TdasRdU-rtPLyZVhc"
+        }
+      },
+      "permissions": [],
+      "blockedPermissions": [
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.READ_MEDIA_VIDEO",
+        "android.permission.READ_MEDIA_AUDIO",
+        "android.permission.READ_MEDIA_VISUAL_USER_SELECTED",
+        "android.permission.ACCESS_MEDIA_LOCATION",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/appicon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff",
+          "dark": {
+            "backgroundColor": "#000000"
+          }
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "color": "#7C3AED",
+          "sounds": [
+            "./assets/sounds/survey_alert.mp3"
+          ],
+          "androidMode": "default",
+          "androidCollapsedTitle": "ClaimsMitra Notifications"
+        }
+      ],
+      "expo-sqlite",
+      "react-native-compressor",
+      "@react-native-firebase/app",
+      "./plugins/withMonitoringToolFlag",
+      "./plugins/withNonModularHeaders",
+      "@react-native-firebase/messaging"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "c208790a-71a8-4d63-af3c-adcce3fa9bd7"
+      }
+    }
+  }
+}
